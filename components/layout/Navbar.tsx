@@ -61,7 +61,7 @@ export function Navbar() {
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <span className="font-heading font-bold text-lg gradient-text-blue">
-              alex.dev
+              X.M
             </span>
           </motion.a>
 

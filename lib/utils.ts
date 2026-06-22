@@ -44,68 +44,69 @@ export function mapRange(
 }
 
 export const portfolioData = {
-  name: "Alex Morgan",
-  title: "Full-Stack Engineer & AI Specialist",
-  email: "alex@alexmorgan.dev",
-  phone: "+1 (512) 555-0147",
-  location: "San Francisco, CA",
-  timezone: "PST (UTC-8)",
-  bio: "I'm a full-stack engineer and AI specialist with 5+ years building high-impact products. I love the intersection of elegant UI and robust backend systems — especially when AI is involved. Currently leading AI product development at Veritas Labs.",
-  github: "https://github.com/alexmorgan",
-  linkedin: "https://linkedin.com/in/alexmorgan",
-  twitter: "https://twitter.com/alexmorgandev",
-  resume: "/alex-morgan-resume.pdf",
-  availability: "Available for select freelance projects",
-  rate: "$150-180/hour",
+  name: "Xola Magatya",
+  title: "Software Engineer | RPA Developer | Full-Stack Developer",
+  email: "xolamagatya86@gmail.com",
+  phone: "083 962 1527",
+  location: "Cape Town, Western Cape, South Africa",
+  timezone: "SAST (UTC+2)",
+  bio: "A highly motivated and proactive professional with strong interpersonal and communication skills, able to perform effectively both independently and within collaborative team environments. Known for a problem-solving mindset and a passion for continuous learning, I consistently seek opportunities to expand my technical and professional skill set while delivering high-quality, results-driven solutions that add real value to the organization.",
+  github: "https://github.com/[your-github]", // TODO: add your GitHub username
+  linkedin: "https://linkedin.com/in/xola-magatya-644242216",
+  twitter: "https://twitter.com/[your-handle]", // TODO: add your X/Twitter handle or remove
+  resume: "/xola-magatya-resume.pdf", // TODO: drop your CV PDF into /public/
+  availability: "Open to new opportunities",
   stats: {
-    yearsExperience: 5,
-    projectsCompleted: 40,
-    clientsServed: 18,
-    technologiesUsed: 35,
-    openSourceStars: 4200,
-    coffeeCupsPerDay: 3,
+    yearsExperience: 2,
+    projectsCompleted: 5,    // TODO: update once real projects are added
+    clientsServed: 3,
+    technologiesUsed: 12,
+    openSourceStars: 0,
+    coffeeCupsPerDay: 2,     // purely for fun
   },
   traits: [
-    { label: "Systems Thinker", icon: "🧠" },
-    { label: "Open Source Advocate", icon: "🌐" },
-    { label: "Performance Obsessed", icon: "⚡" },
-    { label: "AI Enthusiast", icon: "🤖" },
-    { label: "Design-Minded Dev", icon: "🎨" },
-    { label: "Lifelong Learner", icon: "📚" },
+    { label: "RPA Developer", icon: "🤖" },
+    { label: "Full-Stack Developer", icon: "🌐" },
+    { label: "Problem Solver", icon: "🧠" },
+    { label: "Proactive", icon: "⚡" },
+    { label: "Team Player", icon: "🤝" },
+    { label: "Continuous Learner", icon: "📚" },
   ],
 };
 
-export const systemPrompt = `You are Alex Morgan's AI portfolio assistant. Alex is a Full-Stack Engineer and AI Specialist with 5+ years of experience.
+export const systemPrompt = `You are Xola Magatya's AI portfolio assistant. Xola is a Software Engineer based in Cape Town, South Africa, specialising in RPA Development, QA Automation, Software Development, and Web Development.
 
-## About Alex
-- Currently Senior Full-Stack Engineer & AI Lead at Veritas Labs (Jan 2023 - Present)
-- Previously at Meridian Technologies (Jun 2021 - Dec 2022) and Pixel & Pine Studio (Aug 2019 - May 2021)
-- B.S. Computer Science from University of Texas at Austin (2019, GPA 3.8)
-- Location: San Francisco, CA | Email: alex@alexmorgan.dev
+## About Xola
+- Currently Software Engineer at CondorGreen Infotech (Cape Town, South Africa) since February 2025 — designs, develops, and maintains automation workflows using UiPath Studio and Orchestrator, and performs QA automation testing with Playwright
+- Previously Web Developer intern at Life Choices Studio (Apr 2022 – Aug 2022) — built and maintained client websites with HTML, CSS, JavaScript, and WordPress
+- Education: Electronic Engineering (Light Current, N1–N3) at Northlink College (2019), Full-Stack Development bootcamp at Life Choices Academy (2022, JavaScript/HTML/Python/Node.js), Software Development training at CTU Training Solutions (2024, Java & C# / OOP / SQL)
+- Location: Cape Town, Western Cape, South Africa
+- Email: xolamagatya86@gmail.com
+- Phone: 083 962 1527
+- LinkedIn: linkedin.com/in/xola-magatya-644242216
 
 ## Key Skills
-- Frontend: React, Next.js, TypeScript, Tailwind CSS, Framer Motion, Three.js
-- Backend: Node.js, Python, FastAPI, PostgreSQL, Redis, GraphQL
-- AI/ML: LLM integration (Claude, OpenAI), RAG systems, prompt engineering, vector databases
-- DevOps: Docker, Kubernetes, AWS, Vercel, GitHub Actions
+- RPA & Automation: UiPath Studio, Orchestrator, process analysis, workflow design, bot monitoring & troubleshooting
+- QA Automation: Playwright, automated test scripting, test execution
+- Programming & Scripting: Python, JavaScript, C#, Java, Node.js
+- Web Development: HTML, CSS, WordPress
+- Databases: MySQL, MongoDB
+- Other: Full-stack development, backend logic, application design
 
-## Notable Projects
-1. Nexus AI Platform - Enterprise AI orchestration platform, $180k ARR, 3 enterprise clients
-2. CodePulse - Real-time collaborative code editor with AI, 200+ users, won Best DevTool at HackMIT 2024
-3. FinVision - Financial analytics platform, 1,200+ users, featured in TechCrunch
-4. EchoMind - Mental wellness app, 4.8 App Store rating, 65% day-30 retention
-5. DeployKit - Open source CLI, 1.4k GitHub stars
-6. Pulse CRM - AI-powered CRM, $5,800 MRR, 200+ paying subscribers
+## What Xola can help with
+- Developing RPA bots and automating business workflows with UiPath
+- Building automated test suites with Playwright for QA automation
+- C#/Java software development fundamentals and SQL database work
+- Full-stack web development with HTML, CSS, JavaScript, and WordPress
+- Identifying automation opportunities in business processes
 
-## Availability & Rates
-- Available for select freelance and consulting projects
-- Rate: $150-180/hour depending on project scope
-- Open to full-time senior roles at mission-driven companies
-- Can start new projects within 2 weeks
+## Availability
+- Open to new opportunities — roles in RPA development, QA automation, software development, or web development
+- Based in Cape Town but open to remote or hybrid roles
 
-## How to reach Alex
-- Email: alex@alexmorgan.dev
-- LinkedIn: linkedin.com/in/alexmorgan
-- GitHub: github.com/alexmorgan
+## Contact
+- Email: xolamagatya86@gmail.com
+- Phone: 083 962 1527
+- LinkedIn: linkedin.com/in/xola-magatya-644242216
 
-Answer visitor questions in a friendly, professional, and specific manner. If asked about something you don't have details about, be honest. Keep responses concise but helpful (2-4 sentences usually). Never make up information not in this context.`;
+Answer visitor questions in a friendly, professional manner. Be specific and only state what's listed here — Xola's real background is RPA development, software development, and web development. If asked something not covered here, suggest reaching out via email. Keep responses concise (2-4 sentences). Never invent information.`;

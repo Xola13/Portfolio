@@ -20,45 +20,46 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   title: {
-    default: "Alex Morgan | Full-Stack Engineer & AI Specialist",
-    template: "%s | Alex Morgan",
+    default: "Xola Magatya | Software Developer & QA Automation Engineer",
+    template: "%s | Xola Magatya",
   },
   description:
-    "Full-Stack Engineer and AI Specialist with 5+ years building production-grade web applications, AI-powered tools, and open-source projects.",
+    "Software Developer based in Cape Town, South Africa. Specialising in QA Automation with Playwright, RPA Development with UiPath, C# software development, and web development.",
   keywords: [
-    "Full-Stack Engineer",
-    "AI Specialist",
-    "React Developer",
-    "Next.js",
-    "TypeScript",
-    "LLM Integration",
-    "San Francisco",
+    "Software Developer",
+    "QA Automation",
+    "Playwright",
+    "RPA Developer",
+    "UiPath",
+    "C# Developer",
+    "Web Developer",
+    "Cape Town",
+    "South Africa",
+    "Xola Magatya",
   ],
-  authors: [{ name: "Alex Morgan", url: "https://alexmorgan.dev" }],
-  creator: "Alex Morgan",
+  authors: [{ name: "Xola Magatya" }],
+  creator: "Xola Magatya",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://alexmorgan.dev",
-    title: "Alex Morgan | Full-Stack Engineer & AI Specialist",
+    locale: "en_ZA",
+    title: "Xola Magatya | Software Developer",
     description:
-      "Full-Stack Engineer and AI Specialist with 5+ years building production-grade web applications and AI tools.",
-    siteName: "Alex Morgan Portfolio",
+      "Software Developer based in Cape Town, South Africa. Building solutions with C#, Azure DevOps, and modern web technologies.",
+    siteName: "Xola Magatya Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alex Morgan Portfolio",
+        alt: "Xola Magatya Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Morgan | Full-Stack Engineer & AI Specialist",
+    title: "Xola Magatya | Software Developer",
     description:
-      "Full-Stack Engineer and AI Specialist with 5+ years building production-grade applications.",
-    creator: "@alexmorgandev",
+      "Software Developer based in Cape Town, South Africa.",
     images: ["/og-image.jpg"],
   },
   robots: {

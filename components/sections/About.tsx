@@ -1,29 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { portfolioData } from "@/lib/utils";
 
 const stats = [
-  { label: "Years Experience", value: 5, suffix: "+" },
-  { label: "Projects Shipped", value: 40, suffix: "+" },
-  { label: "Clients Served", value: 18, suffix: "" },
-  { label: "GitHub Stars", value: 4200, suffix: "+" },
+  { label: "Years Experience", value: portfolioData.stats.yearsExperience, suffix: "+" },
+  { label: "Technologies Used", value: portfolioData.stats.technologiesUsed, suffix: "+" },
+  { label: "Clients Served", value: portfolioData.stats.clientsServed, suffix: "" },
+  { label: "Projects Completed", value: portfolioData.stats.projectsCompleted, suffix: "+" },
 ];
 
 export function About() {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const { ref } = useInView({ triggerOnce: true, threshold: 0.1 });
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.1 } },
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    show: { opacity: 1, y: 0 },
   };
 
   return (
@@ -33,7 +34,7 @@ export function About() {
           tag="About Me"
           title="The engineer behind"
           highlight="the code"
-          subtitle="A curious mind who loves building things that matter — from sleek frontends to robust AI pipelines."
+          subtitle="A curious mind who loves building things that matter — from automation workflows to full-stack web apps."
         />
 
         <div ref={ref} className="grid lg:grid-cols-2 gap-16 items-center">
@@ -48,9 +49,13 @@ export function About() {
             {/* Avatar */}
             <div className="relative">
               <div className="w-56 h-56 rounded-3xl overflow-hidden relative animate-pulse-glow">
-                <div className="w-full h-full bg-gradient-to-br from-primary-600 via-accent-600 to-primary-800 flex items-center justify-center">
-                  <span className="text-7xl select-none">👨‍💻</span>
-                </div>
+                <Image
+                  src="/images/about.jpg"
+                  alt={portfolioData.name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
               {/* Floating badge */}
               <motion.div
@@ -94,25 +99,28 @@ export function About() {
           >
             <motion.div variants={item} className="space-y-4">
               <p className="text-[var(--muted-foreground)] leading-relaxed text-base sm:text-lg">
-                I&apos;m a full-stack engineer and AI specialist based in San Francisco, currently
-                leading AI product development at{" "}
-                <span className="text-primary-400 font-medium">Veritas Labs</span>. I love
-                building things at the intersection of elegant UI, robust backend
-                infrastructure, and intelligent AI systems.
+                I&apos;m a software engineer based in Cape Town, currently building and
+                maintaining RPA automation workflows with{" "}
+                <span className="text-primary-400 font-medium">UiPath Studio and Orchestrator</span>{" "}
+                at CondorGreen Infotech, alongside QA automation testing with{" "}
+                <span className="text-primary-400 font-medium">Playwright</span>. I love turning
+                manual, repetitive business processes into reliable, well-documented automation.
               </p>
               <p className="text-[var(--muted-foreground)] leading-relaxed text-base sm:text-lg">
-                Over the past 5 years I&apos;ve shipped products used by thousands of
-                people — from a mental wellness app with 4.8 App Store stars, to an
-                enterprise AI platform doing $180k ARR, to open-source developer tools
-                with 4,200+ GitHub stars. I care deeply about{" "}
-                <span className="text-[var(--foreground)] font-medium">code quality</span>,{" "}
-                <span className="text-[var(--foreground)] font-medium">performance</span>, and
-                building products people actually love.
+                My path started with an Electronic Engineering qualification at Northlink
+                College, followed by a full-stack development bootcamp at Life Choices
+                Academy and software development training in Java and C# at CTU Training
+                Solutions. Along the way I&apos;ve built client websites with{" "}
+                <span className="text-[var(--foreground)] font-medium">HTML, CSS, JavaScript, and WordPress</span>,
+                and worked hands-on with{" "}
+                <span className="text-[var(--foreground)] font-medium">MySQL and MongoDB</span> databases.
               </p>
               <p className="text-[var(--muted-foreground)] leading-relaxed text-base sm:text-lg">
-                When I&apos;m not writing code, I&apos;m writing about it — my technical articles
-                on AI engineering and React patterns have been read by 50,000+ developers.
-                I&apos;m also a mentor, open-source contributor, and coffee enthusiast.
+                I&apos;m a proactive professional with strong communication skills —
+                equally comfortable working independently or within a team. I have a
+                problem-solving mindset and a genuine passion for continuous learning,
+                always looking to expand my skill set and deliver results that add real
+                value.
               </p>
             </motion.div>
 
@@ -138,10 +146,10 @@ export function About() {
             {/* Quick info */}
             <motion.div variants={item} className="glass-card p-5 space-y-3">
               {[
-                { label: "Location", value: "San Francisco, CA (Remote-friendly)" },
+                { label: "Location", value: `${portfolioData.location} (Remote-friendly)` },
                 { label: "Email", value: portfolioData.email },
+                { label: "Phone", value: portfolioData.phone },
                 { label: "Availability", value: portfolioData.availability },
-                { label: "Rate", value: portfolioData.rate },
               ].map(({ label, value }) => (
                 <div key={label} className="flex items-center justify-between text-sm">
                   <span className="text-[var(--muted-foreground)]">{label}</span>

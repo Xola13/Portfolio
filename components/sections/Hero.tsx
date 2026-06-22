@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { Github, Linkedin, Twitter, Mail, ArrowDown, Download, ExternalLink } from "lucide-react";
+import { Mail, ArrowDown, Download, ExternalLink } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/SocialIcons";
 import { portfolioData } from "@/lib/utils";
 
 export function Hero() {
@@ -93,20 +94,20 @@ export function Hero() {
   }, []);
 
   const socialLinks = [
-    { icon: Github, href: portfolioData.github, label: "GitHub" },
-    { icon: Linkedin, href: portfolioData.linkedin, label: "LinkedIn" },
-    { icon: Twitter, href: portfolioData.twitter, label: "Twitter" },
+    { icon: GithubIcon, href: portfolioData.github, label: "GitHub" },
+    { icon: LinkedinIcon, href: portfolioData.linkedin, label: "LinkedIn" },
+    { icon: TwitterIcon, href: portfolioData.twitter, label: "Twitter" },
     { icon: Mail, href: `mailto:${portfolioData.email}`, label: "Email" },
   ];
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 0.3 } },
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    show: { opacity: 1, y: 0 },
   };
 
   return (
@@ -144,7 +145,7 @@ export function Hero() {
           <motion.div variants={item}>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm text-[var(--muted-foreground)] border border-white/10">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Available for new projects
+              Open to new opportunities
             </span>
           </motion.div>
 
@@ -154,7 +155,7 @@ export function Hero() {
             className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight"
           >
             <span className="text-[var(--foreground)]">Hi, I&apos;m </span>
-            <span className="gradient-text">Alex Morgan</span>
+            <span className="gradient-text">{portfolioData.name}</span>
           </motion.h1>
 
           {/* Typewriter */}
@@ -162,20 +163,20 @@ export function Hero() {
             variants={item}
             className="font-heading text-xl sm:text-2xl md:text-3xl text-[var(--muted-foreground)] h-10 flex items-center gap-3"
           >
-            <span>I build</span>
+            <span>I do</span>
             <span className="text-primary-400 font-semibold">
               <TypeAnimation
                 sequence={[
-                  "Web Applications", 2000,
-                  "AI-Powered Tools", 2000,
-                  "Open Source Projects", 2000,
-                  "Scalable APIs", 2000,
-                  "Developer Experiences", 2000,
+                  "QA Automation with Playwright", 2500,
+                  "RPA Development with UiPath", 2500,
+                  "Software Development in C#", 2500,
+                  "Web Development", 2000,
+                  "Python & Database Solutions", 2500,
                 ]}
                 wrapper="span"
                 repeat={Infinity}
-                speed={50}
-                deletionSpeed={65}
+                speed={55}
+                deletionSpeed={70}
               />
             </span>
           </motion.div>
@@ -185,9 +186,9 @@ export function Hero() {
             variants={item}
             className="max-w-2xl text-base sm:text-lg text-[var(--muted-foreground)] leading-relaxed"
           >
-            Full-Stack Engineer &amp; AI Specialist with 5+ years shipping production-grade
-            applications. I love working at the intersection of elegant UI, robust
-            backend systems, and intelligent AI features.
+            Software developer based in {portfolioData.location} with hands-on experience
+            in QA automation testing, RPA bot development, C# software engineering,
+            and responsive web development.
           </motion.p>
 
           {/* CTAs */}
@@ -234,7 +235,7 @@ export function Hero() {
             ))}
             <span className="w-px h-6 bg-white/10" />
             <span className="text-sm text-[var(--muted-foreground)]">
-              SF, CA • Open to remote
+              Cape Town, SA • Open to remote
             </span>
           </motion.div>
 
