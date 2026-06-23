@@ -174,6 +174,37 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "7",
+    slug: "ai-weather-app",
+    title: "Weather App — AI-Powered Forecasts",
+    description:
+      "A Progressive Web App for weather forecasts, air quality, and alerts, with an AI weather assistant and dynamic sky theming — built with React and Vite, deployed on Vercel.",
+    longDescription:
+      "An AI-powered weather app covering forecasts, air quality, and severe weather alerts. Users can search any city or use their current location, save favourite cities for quick access, switch between °C/°F, and chat with a built-in weather assistant. The background dynamically shifts to reflect current sky conditions, and the app installs as a Progressive Web App.",
+    challenge:
+      "Most weather apps are static and data-dense — the goal was a faster, more visual experience that also let users ask natural-language questions about the forecast instead of just reading numbers.",
+    solution:
+      "Built with React and Vite, using TanStack Query for data fetching/caching and a charting library for forecast visualisations. Added a city search with geolocation support, saved cities, unit toggling, and an AI assistant for conversational weather queries, packaged as an installable PWA.",
+    outcome:
+      "Shipped a live, installable PWA with city search, geolocation, saved cities, air quality and alerts, and a conversational AI weather assistant — deployed and running in production on Vercel.",
+    category: "web",
+    tags: ["Web Development", "PWA", "React", "Featured"],
+    techStack: ["React", "Vite", "TanStack Query", "PWA"],
+    thumbnail: "/images/projects/weather-app.jpg",
+    images: ["/images/projects/weather-app.jpg"],
+    liveUrl: "https://weather-app-one-coral-29.vercel.app/",
+    featured: true,
+    year: 2026,
+    keyFeatures: [
+      "City search with geolocation (\"use your location\")",
+      "Saved cities for quick access",
+      "°C / °F unit toggle",
+      "Air quality index and severe weather alerts",
+      "Conversational AI weather assistant",
+      "Dynamic sky-themed background and installable PWA",
+    ],
+  },
+  {
     id: "5",
     slug: "python-data-project",
     title: "Python Automation / Data Project",
