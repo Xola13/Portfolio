@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Star, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { testimonials } from "@/data/testimonials";
 
@@ -63,15 +63,8 @@ export function Testimonials() {
               key={`${t.id}-${i}`}
               className="w-[380px] shrink-0 glass-card p-6 border border-white/5 hover:border-primary-500/20 transition-colors"
             >
-              {/* Stars */}
-              <div className="flex items-center gap-1 mb-4">
-                {Array.from({ length: t.rating }).map((_, j) => (
-                  <Star key={j} className="w-4 h-4 text-amber-400 fill-amber-400" />
-                ))}
-              </div>
-
               {/* Quote */}
-              <div className="relative mb-6">
+              <div className="relative mb-6 mt-2">
                 <Quote className="absolute -top-1 -left-1 w-6 h-6 text-primary-500/30" />
                 <p className="text-sm text-[var(--muted-foreground)] leading-relaxed pl-4 italic">
                   &ldquo;{t.quote}&rdquo;
