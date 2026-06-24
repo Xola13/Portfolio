@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, type Variants } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Mail, ArrowDown, Download, ExternalLink } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { portfolioData } from "@/lib/utils";
 
 export function Hero() {
