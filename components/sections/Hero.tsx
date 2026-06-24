@@ -96,7 +96,6 @@ export function Hero() {
   const socialLinks = [
     { icon: GithubIcon, href: portfolioData.github, label: "GitHub" },
     { icon: LinkedinIcon, href: portfolioData.linkedin, label: "LinkedIn" },
-    { icon: TwitterIcon, href: portfolioData.twitter, label: "Twitter" },
     { icon: Mail, href: `mailto:${portfolioData.email}`, label: "Email" },
   ];
 

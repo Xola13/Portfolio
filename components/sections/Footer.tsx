@@ -64,7 +64,6 @@ export function Footer() {
               {[
                 { icon: GithubIcon, href: portfolioData.github, label: "GitHub" },
                 { icon: LinkedinIcon, href: portfolioData.linkedin, label: "LinkedIn" },
-                { icon: TwitterIcon, href: portfolioData.twitter, label: "Twitter" },
                 { icon: Mail, href: `mailto:${portfolioData.email}`, label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
@@ -89,10 +88,6 @@ export function Footer() {
         <div className="border-t border-[var(--border)] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--muted-foreground)]">
             © {new Date().getFullYear()} Xola Magatya. All rights reserved.
-          </p>
-          <p className="text-xs text-[var(--muted-foreground)] flex items-center gap-1">
-            Built with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> using{" "}
-            <span className="text-primary-400 font-medium">Next.js + Groq AI</span>
           </p>
         </div>
       </div>

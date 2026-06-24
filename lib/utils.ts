@@ -53,7 +53,6 @@ export const portfolioData = {
   bio: "A highly motivated and proactive professional with strong interpersonal and communication skills, able to perform effectively both independently and within collaborative team environments. Known for a problem-solving mindset and a passion for continuous learning, I consistently seek opportunities to expand my technical and professional skill set while delivering high-quality, results-driven solutions that add real value to the organization.",
   github: "https://github.com/Xola13",
   linkedin: "https://linkedin.com/in/xola-magatya-644242216",
-  twitter: "https://twitter.com/[your-handle]", // TODO: add your X/Twitter handle or remove
   resume: "/xola-magatya-resume.pdf",
   availability: "Open to new opportunities",
   stats: {
