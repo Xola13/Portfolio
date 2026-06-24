@@ -166,8 +166,8 @@ export function Hero() {
             <span className="text-primary-400 font-semibold">
               <TypeAnimation
                 sequence={[
-                  "QA Automation with Playwright", 2500,
-                  "RPA Development with UiPath", 2500,
+                  "QA Automation ", 2500,
+                  "RPA Development ", 2500,
                   "Software Development", 2500,
                   "Web Development", 2000,
                 ]}
@@ -235,19 +235,6 @@ export function Hero() {
             <span className="text-sm text-[var(--muted-foreground)]">
               Cape Town, SA • Open to remote
             </span>
-          </motion.div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            variants={item}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <span className="text-xs text-[var(--muted-foreground)] uppercase tracking-widest">
-              Scroll
-            </span>
-            <ArrowDown className="w-4 h-4 text-[var(--muted-foreground)]" />
           </motion.div>
         </motion.div>
       </div>
