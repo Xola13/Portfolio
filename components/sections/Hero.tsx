@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, type Variants } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { Mail, ArrowDown, Download, ExternalLink } from "lucide-react";
+import { Mail, Download, ExternalLink } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { portfolioData } from "@/lib/utils";
 
