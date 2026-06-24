@@ -51,10 +51,10 @@ export const portfolioData = {
   location: "Cape Town, Western Cape, South Africa",
   timezone: "SAST (UTC+2)",
   bio: "A highly motivated and proactive professional with strong interpersonal and communication skills, able to perform effectively both independently and within collaborative team environments. Known for a problem-solving mindset and a passion for continuous learning, I consistently seek opportunities to expand my technical and professional skill set while delivering high-quality, results-driven solutions that add real value to the organization.",
-  github: "https://github.com/[your-github]", // TODO: add your GitHub username
+  github: "https://github.com/Xola13",
   linkedin: "https://linkedin.com/in/xola-magatya-644242216",
   twitter: "https://twitter.com/[your-handle]", // TODO: add your X/Twitter handle or remove
-  resume: "/xola-magatya-resume.pdf", // TODO: drop your CV PDF into /public/
+  resume: "/xola-magatya-resume.pdf",
   availability: "Open to new opportunities",
   stats: {
     yearsExperience: 2,

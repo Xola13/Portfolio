@@ -55,31 +55,30 @@ export const projects: Project[] = [
   },
   {
     id: "2",
-    slug: "uipath-rpa-automation",
-    title: "UiPath Business Process Automation",
+    slug: "uipath-rpa-challenge",
+    title: "UiPath RPA Challenge",
     description:
-      "RPA bot built with UiPath to automate a repetitive business workflow, eliminating manual data entry and reducing processing time for a client.",
+      "A UiPath bot built for the RPA Challenge (rpachallenge.com) — reads applicant data from Excel and fills out a web form whose fields shuffle position on every round, submitting all records correctly.",
     longDescription:
-      "Designed and developed a UiPath RPA bot to automate a high-volume, repetitive business process. The bot handles data extraction, validation, and entry across multiple systems, freeing up staff for higher-value work.", // TODO: update with the real process you automated
+      "A solution to the well-known UiPath RPA Challenge: the bot reads a set of records from an Excel spreadsheet and enters each one into an on-screen web form, repeating the process for every row. The form's input fields are repositioned after every submission, so the bot can't rely on fixed coordinates — it has to reliably locate and fill the correct field every time using UI Automation.",
     challenge:
-      "Client staff were spending hours each day manually copying data between systems — a tedious, error-prone process that scaled poorly with business growth.", // TODO: update
+      "The RPA Challenge is designed to break naive automation: form fields randomly reshuffle position after each submission, so any bot relying on static coordinates or simple click sequences fails partway through.",
     solution:
-      "Built a UiPath attended/unattended bot that reads source data, validates it, and enters it into the target system automatically. Added error handling and exception workflows for edge cases.", // TODO: update
+      "Built in UiPath Studio using Excel Activities to read the source spreadsheet and UI Automation Activities to dynamically locate and fill each form field by its selector rather than its position, looping through every row and submitting the form for each one.",
     outcome:
-      "Automated what previously took hours of manual effort, with near-zero error rate. Client staff were redeployed to more meaningful work.", // TODO: add real numbers if you have them
+      "Built and ran a working bot that correctly fills and submits the form for every record in the spreadsheet despite the fields moving each round — a practical exercise in writing automation that's resilient to UI changes rather than brittle and position-dependent.",
     category: "ai",
-    tags: ["RPA", "UiPath", "Automation", "Featured"],
-    techStack: ["UiPath Studio", "UiPath Orchestrator", "VB.NET", "Excel", "REST APIs"],
-    githubUrl: "https://github.com/[your-github]/[repo-name]", // TODO: add real repo if applicable
+    tags: ["RPA", "UiPath", "Automation"],
+    techStack: ["UiPath Studio", "UI Automation", "Excel Activities", "VB.NET"],
+    githubUrl: "https://github.com/Xola13/Rpa-Challenge1",
     featured: true,
     year: 2025,
     keyFeatures: [
-      "Automated high-volume data entry across multiple systems",
-      "Exception handling and error logging for failed cases",
-      "Email notifications on completion or failure",
-      "Runs unattended on a scheduled trigger",
-      "Audit trail of all processed records",
-      "Significant reduction in manual processing time",
+      "Reads applicant records from an Excel spreadsheet",
+      "Dynamically locates form fields by selector, not fixed position",
+      "Handles fields that reshuffle position after every submission",
+      "Loops through and submits all records automatically",
+      "Built with UiPath Studio's UI Automation and Excel Activities",
     ],
   },
   {
