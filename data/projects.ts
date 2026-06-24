@@ -205,6 +205,37 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "8",
+    slug: "todo-plans-smart-task-manager",
+    title: "Todo Plans — Smart Task Manager",
+    description:
+      "A smart task manager that understands plain English — type what you need to do and it figures out the priority, tags, and due date for you. Built with Vue.js and Vuetify, deployed on Netlify.",
+    longDescription:
+      "Todo Plans is a natural-language task manager: typing something like \"Email Sarah !high #work tomorrow 9am\" auto-detects the priority, tags, and due date/time without any forms or pickers. It supports recurring tasks, subtasks, due-date browser reminders, overdue detection, smart sorting, search and filters, progress stats, and an AI assistant powered by Groq for help managing tasks — all with offline persistence and dark mode.",
+    challenge:
+      "Most todo apps slow users down with separate fields and pickers for priority, tags, and due dates — the goal was to let people capture a task as fast as they think it, in one line of plain text.",
+    solution:
+      "Built with Vue.js and Vuetify for the UI, with a natural-language parser that reads quick-add shorthand (!high for priority, #tag for tags, \"tomorrow 9am\" / \"every monday\" for due dates and recurrence) and turns it into structured task data. Added a Groq-powered AI assistant, recurring tasks, subtasks, and offline persistence so the app works without a backend.",
+    outcome:
+      "Shipped a live, installable task manager with natural-language quick-add, recurring tasks, subtasks, smart sorting, progress stats, and an AI assistant — deployed and running in production on Netlify.",
+    category: "web",
+    tags: ["Web Development", "Vue.js", "Productivity", "Featured"],
+    techStack: ["Vue.js", "Vuetify", "Groq AI", "Netlify"],
+    thumbnail: "/images/projects/todo-app.jpg",
+    images: ["/images/projects/todo-app.jpg"],
+    liveUrl: "https://xola-todo-app.netlify.app/#/",
+    featured: true,
+    year: 2026,
+    keyFeatures: [
+      "Natural-language quick-add (priority, tags, due dates, and recurrence from plain text)",
+      "Recurring tasks and subtasks",
+      "Due-date browser reminders and overdue detection",
+      "Smart sorting, search, and filters",
+      "AI assistant powered by Groq",
+      "Progress stats, undo delete, offline persistence, and dark mode",
+    ],
+  },
+  {
     id: "5",
     slug: "python-data-project",
     title: "Python Automation / Data Project",
