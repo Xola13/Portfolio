@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Heart, Code2 } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/SocialIcons";
+import { Mail, Code2 } from "lucide-react";
+import { GithubIcon, LinkedinIcon} from "@/components/ui/SocialIcons";
 import { portfolioData } from "@/lib/utils";
 
 const navLinks = [
