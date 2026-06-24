@@ -82,35 +82,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "3",
-    slug: "dotnet-web-api",
-    title: "C# .NET Web Application",
-    description:
-      "Full-stack web application built with ASP.NET Core backend, RESTful API, SQL database, and a responsive HTML/CSS/JavaScript frontend.",
-    longDescription:
-      "A full-stack application built in C# with an ASP.NET Core REST API, SQL Server database, and a clean web frontend. Includes user authentication, CRUD operations, and a responsive UI.", // TODO: describe your real project
-    challenge:
-      "Needed a reliable, maintainable web application to manage business data, accessible from any device with a clean interface.", // TODO: update
-    solution:
-      "Built a RESTful API in ASP.NET Core with Entity Framework for data access, and a responsive frontend using HTML, CSS, and JavaScript. Deployed and managed through Azure DevOps.", // TODO: update
-    outcome:
-      "Delivered a working application that met the client's requirements, with clean code structure and version control through Azure DevOps.", // TODO: update with real outcome
-    category: "web",
-    tags: ["Software Development", "C#", ".NET", "Web"],
-    techStack: ["C#", "ASP.NET Core", "SQL Server", "HTML", "CSS", "JavaScript", "Azure DevOps", "Entity Framework"],
-    githubUrl: "https://github.com/[your-github]/[repo-name]", // TODO: add real repo
-    featured: false,
-    year: 2025,
-    keyFeatures: [
-      "RESTful API built with ASP.NET Core",
-      "SQL Server database with Entity Framework ORM",
-      "Responsive frontend with HTML, CSS, JavaScript",
-      "User authentication and authorisation",
-      "CRUD operations with data validation",
-      "Managed via Azure DevOps pipeline",
-    ],
-  },
-  {
     id: "4",
     slug: "binspa-bin-wash-booking",
     title: "BinSpa — Wheelie Bin Wash Booking Platform",
@@ -232,35 +203,6 @@ export const projects: Project[] = [
       "Smart sorting, search, and filters",
       "AI assistant powered by Groq",
       "Progress stats, undo delete, offline persistence, and dark mode",
-    ],
-  },
-  {
-    id: "5",
-    slug: "python-data-project",
-    title: "Python Automation / Data Project",
-    description:
-      "Python script or application for data processing, automation, or backend logic — with MySQL or MongoDB for data storage.",
-    longDescription:
-      "A Python project that handles data processing, automation, or backend operations, backed by a relational MySQL database or MongoDB for flexible document storage.", // TODO: describe your real project
-    challenge:
-      "Needed a reliable, scriptable solution to process or manage data efficiently without heavy infrastructure.", // TODO: update
-    solution:
-      "Built in Python with clean, modular code. Used MySQL for structured relational data, and/or MongoDB for document-based storage where flexibility was needed.", // TODO: update
-    outcome:
-      "Delivered a working, maintainable solution that handles the data requirements reliably.", // TODO: update with real outcome
-    category: "web",
-    tags: ["Python", "Software Development", "MySQL", "MongoDB"],
-    techStack: ["Python", "MySQL", "MongoDB", "REST APIs", "Anaconda"],
-    githubUrl: "https://github.com/[your-github]/[repo-name]", // TODO: add real repo
-    featured: false,
-    year: 2025,
-    keyFeatures: [
-      "Python scripting with clean, modular structure",
-      "MySQL relational database integration",
-      "MongoDB document storage for flexible data",
-      "Data processing and transformation logic",
-      "Error handling and logging",
-      "Reusable, well-documented code", // TODO: update with your real features
     ],
   },
 ];

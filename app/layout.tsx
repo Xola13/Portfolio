@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     template: "%s | Xola Magatya",
   },
   description:
-    "Software Developer based in Cape Town, South Africa. Specialising in QA Automation with Playwright, RPA Development with UiPath, C# software development, and web development.",
+    "Software Developer based in Cape Town, South Africa. Specialising in QA Automation with Playwright, RPA Development with UiPath, software development, and web development.",
   keywords: [
     "Software Developer",
     "QA Automation",
     "Playwright",
     "RPA Developer",
     "UiPath",
-    "C# Developer",
+    "Software Development",
     "Web Developer",
     "Cape Town",
     "South Africa",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     title: "Xola Magatya | Software Developer",
     description:
-      "Software Developer based in Cape Town, South Africa. Building solutions with C#, Azure DevOps, and modern web technologies.",
+      "Software Developer based in Cape Town, South Africa. Building solutions with software development, Azure DevOps, and modern web technologies.",
     siteName: "Xola Magatya Portfolio",
     images: [
       {

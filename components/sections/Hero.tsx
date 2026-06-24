@@ -169,9 +169,8 @@ export function Hero() {
                 sequence={[
                   "QA Automation with Playwright", 2500,
                   "RPA Development with UiPath", 2500,
-                  "Software Development in C#", 2500,
+                  "Software Development", 2500,
                   "Web Development", 2000,
-                  "Python & Database Solutions", 2500,
                 ]}
                 wrapper="span"
                 repeat={Infinity}
@@ -187,7 +186,7 @@ export function Hero() {
             className="max-w-2xl text-base sm:text-lg text-[var(--muted-foreground)] leading-relaxed"
           >
             Software developer based in {portfolioData.location} with hands-on experience
-            in QA automation testing, RPA bot development, C# software engineering,
+            in QA automation testing, RPA bot development, software engineering,
             and responsive web development.
           </motion.p>
 
