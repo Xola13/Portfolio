@@ -205,6 +205,35 @@ export const projects: Project[] = [
       "Progress stats, undo delete, offline persistence, and dark mode",
     ],
   },
+  {
+    id: "9",
+    slug: "boardstake-skill-wagering",
+    title: "BoardStake — Skill-Based Board Game Wagering",
+    description:
+      "A skill-based wagering platform where players challenge opponents to Chess, Draughts, Morabaraba, and more for a pot — built with Next.js and deployed on Vercel.",
+    longDescription:
+      "BoardStake lets players challenge each other to classic board games — Chess, Draughts, Morabaraba, and more — with a pot on the line that's won on skill rather than chance. Access is account-based, with sign-up gated behind an 18+ date-of-birth age verification step before a player can create an account or start wagering.",
+    challenge:
+      "Wagering products need to feel trustworthy and responsible from the very first screen — the platform had to gate access by age before any account exists, while keeping sign-up and sign-in friction-free for verified players.",
+    solution:
+      "Built with Next.js and Tailwind CSS, deployed on Vercel. Designed a dark, focused auth flow where sign-up requires date-of-birth age verification (18+) before account creation, then routes verified players into sign-in and the wagering experience.",
+    outcome:
+      "Shipped a live, deployed platform with a working age-gated sign-up flow and authentication for Chess, Draughts, Morabaraba, and other skill-based board game wagers.",
+    category: "web",
+    tags: ["Web Development", "Next.js", "Gaming"],
+    techStack: ["Next.js", "Tailwind CSS", "Vercel"],
+    thumbnail: "/images/projects/boardstake.jpg",
+    images: ["/images/projects/boardstake.jpg"],
+    liveUrl: "https://boardstake.vercel.app/",
+    featured: false,
+    year: 2026,
+    keyFeatures: [
+      "Skill-based wagering on Chess, Draughts, Morabaraba, and more",
+      "18+ age verification required before account creation",
+      "Account-based sign-up and sign-in flow",
+      "Dark, focused UI built with Next.js and Tailwind CSS",
+    ],
+  },
 ];
 
 export const categories = ["all", "web", "mobile", "ai", "opensource"] as const;
